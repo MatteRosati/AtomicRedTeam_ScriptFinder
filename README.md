@@ -34,7 +34,7 @@ cd AtomicRedTeam_ScriptFinder
 2. **Esegui il setup automatico** per creare un ambiente virtuale ed installare i pacchetti necessari:
 
 ```bat
-environment_setup.bat
+.\environment_setup.bat
 ```
 
 > Questo comando:
@@ -50,7 +50,7 @@ environment_setup.bat
 Una volta creato l'ambiente, puoi **lanciare lo script** per cercare nuovi test con:
 
 ```bat
-RunAtomicFinder.bat
+.\RunAtomicFinder.bat
 ```
 
 ---
