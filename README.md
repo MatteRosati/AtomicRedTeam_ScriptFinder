@@ -116,9 +116,15 @@ git push origin main
 
 ---
 
-## 🧠 Note finali
+## 🧠 Note
 
 * Lo script scarica ad ogni esecuzione la versione più recente della repo Atomic Red Team.
 * Il confronto avviene su base **completa**: ogni test è identificato da tecnica, numero, nome, piattaforma ed executor.
+
+---
+
+## 🧠 Conclusione
+
+* Di volta in volta che viene eseguito, prima di lanciare lo script, scaricare la repository coi file da qui. **si raccomanda di pulire TUTTI i file che vengono creati nella cartella venv (ambiente virtuale creato per l'esecuzione) prima di inserire i file aggiornati.**
 
 ---
