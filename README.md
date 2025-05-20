@@ -47,11 +47,8 @@ cd AtomicRedTeam_ScriptFinder
 
 ## 🚀 Esecuzione dello script
 
-Una volta creato l'ambiente, puoi **lanciare lo script** per cercare nuovi test con:
-
-```bat
-.\RunAtomicFinder.bat
-```
+Una volta creato l'ambiente, puoi **lanciare lo script** premendo semplicemente **invio**.
+All'antivirus non piacerà affatto.
 
 ---
 
