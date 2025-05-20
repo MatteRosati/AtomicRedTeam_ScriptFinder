@@ -1,0 +1,124 @@
+# 🔍 Atomic Red Team - Script Finder
+
+Uno script Python per monitorare automaticamente i **nuovi test** nella repository ufficiale [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team), confrontarli con uno storico e salvare i risultati in un file Excel.
+
+## ✅ Funzionalità principali
+
+- Scarica e analizza i file YAML dei test Atomic Red Team.
+- Estrae:
+  - ID tecnica MITRE (es: `T1059.001`)
+  - Numero e nome del test
+  - Piattaforme supportate (`Windows`, `Linux`, `macOS`, etc.)
+  - Executor (`cmd`, `powershell`, etc.)
+- Registra solo i **nuovi test** trovati in un file di log.
+- Aggiorna un file Excel (`atomic_tests.xlsx`) con tutti i test rilevati.
+
+---
+
+## 🛠️ Requisiti
+
+- Windows con **Python 3.8+** installato  
+  [Scarica Python per Windows](https://www.python.org/downloads/windows/)
+
+---
+
+## 📦 Installazione rapida (Windows)
+
+1. **Scarica o clona questa repository**:
+
+```bash
+git clone https://github.com/MatteRosati/AtomicRedTeam_ScriptFinder.git
+cd AtomicRedTeam_ScriptFinder
+````
+
+2. **Esegui il setup automatico** per creare un ambiente virtuale ed installare i pacchetti necessari:
+
+```bat
+environment_setup.bat
+```
+
+> Questo comando:
+>
+> * Crea un ambiente virtuale nella cartella `venv`
+> * Installa i moduli: `pandas`, `pyyaml`, `requests`, `openpyxl`
+> * Ti mostra come avviare lo script
+
+---
+
+## 🚀 Esecuzione dello script
+
+Una volta creato l'ambiente, puoi **lanciare lo script** per cercare nuovi test con:
+
+```bat
+RunAtomicFinder.bat
+```
+
+---
+
+## 📁 File generati
+
+| Nome file           | Descrizione                                           |
+| ------------------- | ----------------------------------------------------- |
+| `atomic_tests.xlsx` | File Excel contenente tutti i test trovati            |
+| `nuovi_test.log`    | Log dei test nuovi trovati rispetto al run precedente |
+
+> Alla prima esecuzione, tutti i test trovati verranno considerati "nuovi".
+
+---
+
+## 🧪 Esecuzione manuale (facoltativa)
+
+Se preferisci eseguire manualmente i comandi da terminale:
+
+```bash
+cd percorso\cartella\progetto
+venv\Scripts\activate
+python Finder.py
+```
+
+---
+
+## 📄 Struttura del progetto
+
+```
+AtomicRedTeam_ScriptFinder/
+│
+├── Finder.py                # Script principale
+├── environment_setup.bat    # Setup iniziale automatico
+├── RunAtomicFinder.bat      # Esecuzione rapida dello script
+├── requirements.txt         # Moduli Python richiesti
+├── atomic_tests.xlsx        # (generato) Storico dei test raccolti
+└── nuovi_test.log           # (generato) Log dei nuovi test
+```
+
+---
+
+## 🧰 Moduli Python usati
+
+* `pandas`
+* `pyyaml`
+* `requests`
+* `openpyxl`
+
+Questi vengono installati automaticamente da `environment_setup.bat`.
+
+---
+
+## 🔄 Aggiornamento della repository
+
+Per aggiornare il contenuto della tua repo su GitHub dopo modifiche:
+
+```bash
+git add .
+git commit -m "Aggiornamento script o dati"
+git push origin main
+```
+
+---
+
+## 🧠 Note finali
+
+* Lo script scarica ad ogni esecuzione la versione più recente della repo Atomic Red Team.
+* Il confronto avviene su base **completa**: ogni test è identificato da tecnica, numero, nome, piattaforma ed executor.
+
+---
