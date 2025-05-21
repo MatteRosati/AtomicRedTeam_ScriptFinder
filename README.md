@@ -63,33 +63,6 @@ All'antivirus non piacerà affatto.
 
 ---
 
-## 🧪 Esecuzione manuale (facoltativa)
-
-Se preferisci eseguire manualmente i comandi da terminale:
-
-```bash
-cd percorso\cartella\progetto
-venv\Scripts\activate
-python Finder.py
-```
-
----
-
-## 📄 Struttura del progetto
-
-```
-AtomicRedTeam_ScriptFinder/
-│
-├── Finder.py                # Script principale
-├── environment_setup.bat    # Setup iniziale automatico
-├── RunAtomicFinder.bat      # Esecuzione rapida dello script
-├── requirements.txt         # Moduli Python richiesti
-├── atomic_tests.xlsx        # (generato) Storico dei test raccolti
-└── nuovi_test.log           # (generato) Log dei nuovi test
-```
-
----
-
 ## 🧰 Moduli Python usati
 
 * `pandas`
@@ -98,18 +71,6 @@ AtomicRedTeam_ScriptFinder/
 * `openpyxl`
 
 Questi vengono installati automaticamente da `environment_setup.bat`.
-
----
-
-## 🔄 Aggiornamento della repository
-
-Per aggiornare il contenuto della tua repo su GitHub dopo modifiche:
-
-```bash
-git add .
-git commit -m "Aggiornamento script o dati"
-git push origin main
-```
 
 ---
 
@@ -122,6 +83,6 @@ git push origin main
 
 ## 🧠 Conclusione
 
-* Di volta in volta che viene eseguito, prima di lanciare lo script, scaricare la repository coi file da qui. **si raccomanda di pulire TUTTI i file che vengono creati nella cartella venv (ambiente virtuale creato per l'esecuzione) prima di inserire i file aggiornati.**
+* Di volta in volta che viene eseguito, prima di lanciare lo script, scaricare la repository coi file da qui. **si raccomanda di pulire TUTTI i file che vengono creati nella cartella venv (ambiente virtuale creato per l'esecuzione) prima di inserire i file aggiornati su GitHub.**
 
 ---
