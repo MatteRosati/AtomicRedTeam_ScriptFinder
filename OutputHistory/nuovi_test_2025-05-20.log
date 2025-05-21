@@ -1,3 +1,7 @@
+###################################################################################################
+# ATTENZIONE: Questo file è il risultato della prima esecuzione, non essendo presenti altri file
+# Excel con cui confrontare, tutti gli atomic test risulteranno "nuovi".
+###################################################################################################
 
 === Nuovi test trovati (1730) - 2025-05-20 18:03:38 ===
 T1001.002 - Test 1: Steganographic Tarball Embedding (Platforms: windows, Executor: powershell)

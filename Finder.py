@@ -11,7 +11,7 @@ from datetime import datetime
 # Configurazioni
 GITHUB_REPO_ZIP = "https://github.com/redcanaryco/atomic-red-team/archive/refs/heads/master.zip"
 EXCEL_FILE = "atomic_tests.xlsx"
-LOG_FILE = "nuovi_test.log"
+LOG_FILE = f"nuovi_test_{datetime.now().strftime('%Y-%m-%d')}.log"
 
 def download_and_extract_repo():
     tmp_dir = tempfile.mkdtemp()
