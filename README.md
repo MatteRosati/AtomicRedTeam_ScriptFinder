@@ -59,7 +59,7 @@ All'antivirus non piacerà affatto.
 | `atomic_tests.xlsx` | File Excel contenente tutti i test trovati            |
 | `nuovi_test.log`    | Log dei test nuovi trovati rispetto al run precedente |
 
-> Alla prima esecuzione, tutti i test trovati verranno considerati "nuovi".
+> Alla prima esecuzione, tutti i test trovati verranno considerati "nuovi" se non si importa l'Excel contenuto nella repo, aggiornato al **20.5.2025**.
 
 ---
 
